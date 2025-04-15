@@ -69,7 +69,8 @@ fi
 
 # Start the application
 echo -e "${GREEN}Starting 3eekeeper News Summarizer...${NC}"
-python3 main.py
+# Use the Python interpreter from the virtual environment explicitly
+"$SCRIPT_DIR/venv/bin/python" main.py
 
 # Deactivate virtual environment when the application exits
 deactivate
